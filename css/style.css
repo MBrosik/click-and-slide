@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #393939;
+}
+
+#container {
+  width: 100vw;
+  max-width: 1000px;
+  position: relative;
+  padding: 20px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+#slider {
+  width: 400px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+}
+
+#slider div {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 3px solid #fb542b;
+  position: relative;
+}
+
+#slider div img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#slider button {
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#slider button:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+#slider button canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#ModesDiv {
+  width: 300px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+}
+
+#ModesDiv button {
+  padding: 3px 7px;
+  font-size: 11px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #fb542b;
+  -webkit-box-shadow: 0 2px #999;
+          box-shadow: 0 2px #999;
+}
+
+#ModesDiv button:hover {
+  background-color: #df4d29;
+}
+
+#ModesDiv button:active {
+  background-color: #df4d29;
+  -webkit-box-shadow: 0 1px #999;
+          box-shadow: 0 1px #999;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+#timer {
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid #fb542b;
+  width: 200px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0;
+}
+
+#timer img {
+  height: 20px;
+}
+
+#CookiesContainer {
+  width: 380px;
+  min-height: 23px;
+}
+
+#CookiesContainer .CookieBaner {
+  position: relative;
+  background-color: #c74626;
+  -webkit-box-shadow: 0 3px #999;
+          box-shadow: 0 3px #999;
+  font-size: 13px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+  height: 27px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0;
+}
+
+#CookiesContainer .CookieBaner * {
+  cursor: pointer;
+}
+
+#CookiesContainer .CookieBaner > div:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0;
+}
+
+#CookiesContainer .CookieBaner > button {
+  outline: none;
+  border: none;
+  background-color: #c74626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  left: 100%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+
+#CookiesContainer .CookieBaner > button canvas {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  height: 20px;
+  width: 20px;
+}
+
+#CookiesContainer > div:nth-child(2),
+#CookiesContainer .CookieOption > div:nth-child(2) {
+  overflow: hidden;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#CookiesContainer .CookieOption > div:nth-child(2) > div {
+  color: #52c6ff;
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 4px solid #fb542b;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60px 160px 90px;
+      grid-template-columns: 60px 160px 90px;
+}
+
+#CookiesContainer .CookieOption > div:nth-child(2) > div .heading {
+  font-size: 14px;
+}
+
+#CookiesContainer .CookieOption > div:nth-child(2) > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0;
+}
+
+#CookiesContainer .CookieOption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0px;
+}
+
+.AlertContainer {
+  background-color: rgba(57, 57, 57, 0.63);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #52c6ff;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  position: absolute;
+  z-index: 5;
+}
+
+.AlertContainer:hover {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.AlertContainer > div {
+  border-radius: 15px;
+  background-color: #393939;
+  overflow: hidden;
+  height: 150px;
+  width: 200px;
+  position: relative;
+  -webkit-box-shadow: 0 0 2px white;
+          box-shadow: 0 0 2px white;
+}
+
+.AlertContainer > div div:nth-child(1) {
+  width: 100%;
+  height: 20px;
+  background-color: #fb542b;
+}
+
+.AlertContainer > div div:nth-child(2) {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 25%;
+}
+
+.AlertContainer > div input {
+  width: 70%;
+  padding: 2px 10px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 55%;
+  background-color: #393939;
+  border-radius: 4px;
+  border: 1px solid #fb542b;
+  outline: none;
+  -webkit-box-shadow: 0 0 0px white;
+          box-shadow: 0 0 0px white;
+  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
+  transition: -webkit-box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+  font-size: 9px;
+  color: white;
+}
+
+.AlertContainer > div input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 3px white;
+          box-shadow: 0 0 3px white;
+}
+
+.AlertContainer > div button {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 75%;
+  padding: 3px 7px;
+  font-size: 11px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #fb542b;
+  -webkit-box-shadow: 0 2px #999;
+          box-shadow: 0 2px #999;
+}
+
+.AlertContainer > div button:hover {
+  background-color: #df4d29;
+}
+
+.AlertContainer > div button:active {
+  background-color: #df4d29;
+  -webkit-box-shadow: 0 1px #999;
+          box-shadow: 0 1px #999;
+  -webkit-transform: translate(-50%, calc(-50% + 1px));
+          transform: translate(-50%, calc(-50% + 1px));
+}
+
+#PuzzleContainer {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 4px solid #fb542b;
+  position: relative;
+  margin: 5px;
+}
+
+#PuzzleContainer canvas {
+  position: absolute;
+  z-index: 1;
+}
+
+.Numbersbutton {
+  padding: 3px 7px;
+  font-size: 11px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #fb542b;
+  -webkit-box-shadow: 0 2px #999;
+          box-shadow: 0 2px #999;
+}
+
+.Numbersbutton:hover {
+  background-color: #df4d29;
+}
+
+.Numbersbutton:active {
+  background-color: #df4d29;
+  -webkit-box-shadow: 0 1px #999;
+          box-shadow: 0 1px #999;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+/*# sourceMappingURL=style.css.map */
